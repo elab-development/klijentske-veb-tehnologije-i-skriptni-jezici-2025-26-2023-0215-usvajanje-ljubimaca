@@ -1,0 +1,28 @@
+/* StatBar component styles */
+
+.bar {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-12);
+  padding: var(--space-8) var(--space-4);
+  background: var(--color-muted);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-foreground);
+  line-height: 1;
+}
+
+.label {
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+}

@@ -1,0 +1,147 @@
+/* Home page styles */
+
+.hero {
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  padding: var(--space-16) var(--space-4);
+  text-align: center;
+}
+
+.heroInner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: rgba(255, 255, 255, 0.15);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-xl);
+  font-size: 0.875rem;
+  margin-bottom: var(--space-6);
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: var(--space-4);
+}
+
+.heroSubtitle {
+  font-size: 1.125rem;
+  opacity: 0.8;
+  margin-bottom: var(--space-8);
+}
+
+.heroCtas {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  padding: var(--space-3) var(--space-8);
+  border-radius: var(--radius-md);
+  background: var(--color-primary-foreground);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  transition: opacity var(--transition-fast);
+}
+
+.btnPrimary:hover {
+  opacity: 0.9;
+}
+
+.btnGhost {
+  padding: var(--space-3) var(--space-8);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--color-primary-foreground);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background var(--transition-fast);
+}
+
+.btnGhost:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Features section */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-12) var(--space-6);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.seeAll {
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.seeAll:hover {
+  color: var(--color-foreground);
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-12);
+}
+
+.featureCard {
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-card);
+}
+
+.featureIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: var(--color-muted);
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+}
+
+.featureTitle {
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.featureDescription {
+  font-size: 0.9rem;
+  color: var(--color-muted-foreground);
+  line-height: 1.6;
+}
+
+/* Pet grid */
+.petsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-6);
+}
